@@ -1,7 +1,7 @@
 # Site settings
 title:          Lerntagebuch &ndash; Modul BAIN @ FHGR:HS20
 description:    "A blog about my learing experience, an assignment for the module BAIN at the FHGR in Switzerland."
-baseurl:        "/bain"
+baseurl:        "/bain-log"
 url:            "https://regrebneuel.github.io"
 
 # Google Analytics
