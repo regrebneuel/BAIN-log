@@ -1,17 +1,17 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+title:          Lerntagebuch -- Modul BAIN @ FHGR:HS20
+description:    "A blog about my learing experience, an assignment for the module BAIN at the FHGR in Switzerland."
+baseurl:        "/bain"
+url:            "https://regrebneuel.github.io"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Gaby Leuenberger
+  
+  email:        gabriela.leuenberger@stud.fhgr.ch
 
 # Build settings
 markdown:       kramdown
