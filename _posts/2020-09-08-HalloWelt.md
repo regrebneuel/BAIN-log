@@ -2,7 +2,7 @@
 title: "Ein Start auf github"
 author: "regrebneuel"
 date: 2020-09-08
-category: "Um den Brei"
+categories: "Um den Brei"
 ---
 # Der erste Blogpost auf meiner Github-Page
 

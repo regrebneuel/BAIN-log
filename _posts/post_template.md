@@ -2,7 +2,7 @@
 title: "My fancy Title"
 author: "regrebneuel"
 date: 2020-09-08
-category: "Tagebuch"
+categories: "Tagebuch"
 ---
 # Titel
 
