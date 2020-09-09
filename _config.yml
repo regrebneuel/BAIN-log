@@ -3,6 +3,7 @@ title:          Lerntagebuch &ndash; Modul BAIN @ FHGR:HS20
 description:    "A blog about my learing experience, an assignment for the module BAIN at the FHGR in Switzerland."
 baseurl:        "/bain-log"
 url:            "https://regrebneuel.github.io"
+locale: "de_DE"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
@@ -28,8 +29,10 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-remote-theme
   # - jemoji #Uncomment this to allow emoji in your post
 
+remote_theme: regrebneuel/bain-log
 # Permalinks
 permalink:      /:year-:month-:day/:title
 paginate:       5
