@@ -29,7 +29,8 @@ Ich wollte &ndash; mich an die letzte Sitzung und [die Metadaten](https://regreb
 
 Es müssen doch *tatsächlich* die ID-Felder mit Doppelpunkt, und nicht mit Punkt geschrieben werden wie der Rest. Verstehen muss man das nicht, denke ich. Aber so funktioniert die Abfrage tatsächlich, und zwar auch mit MARC21. Nicht wie beim tapferen Bibliothekar der [Universitätsbibliothek von Notre Dame](https://library.nd.edu/), der im UNIMARC-Format abgefragt hat.
 
-![Der Touchdown Jesus am Eingang der Bibliothek hat seinen Namen [verdient](https://en.wikipedia.org/wiki/Hesburgh_Library#Nickname)](https://en.wikipedia.org/wiki/Hesburgh_Library#/media/File:Touchdown_Jesus_at_Notre_Dame.jpg)
+![](https://en.wikipedia.org/wiki/Hesburgh_Library#/media/File:Touchdown_Jesus_at_Notre_Dame.jpg)
+Der Touchdown Jesus am Eingang der Bibliothek hat seinen Namen [verdient](https://en.wikipedia.org/wiki/Hesburgh_Library#Nickname)
 
 Wie es scheint, ist die Koha-Community ist gut aufgestellt, mit ausführlichem [Wiki](https://wiki.koha-community.org/wiki/Main_Page), und wenn man dereinst tatsächlich mit Koaha arbeiten sollte, könnte man sich [hier](https://lists.koha-community.org/cgi-bin/mailman/listinfo/koha-de) in die deutsche Mailingliste eintragen.
 
@@ -42,4 +43,4 @@ Wozu ich gar nicht mehr kam letzte Woche ist die Würdigung von [Open Hub](https
 
 Die Zahlen für Koha sind ziemlich eindrücklich und zeigen deutlich, dass die Community sehr aktiv ist und das Projekt stetig weiterentwickelt:
 
-![]({{site.bash}}/assets/koha_open_hub.png)
+![]({{site.baseurl}}/assets/koha_open_hub.png)
