@@ -1,6 +1,7 @@
 ---
 title: "Lerneinheit zwei: Git, Teil 1/2 Funktion und Aufbau von Bibliothekssystemen"
 author: "Gaby Leuenberger"
+date: 2020-09-25
 ---
 # Live from the road
 Zur Lerneinheit zwei begrüsst uns der Dozent als digitaler Nomade aus dem Bus; erstaunlich, dass die mobile Datenverbindung auch ein Webex-Meeting erträgt! Bis auf zwei, drei kurze Aussetzer mit dem Ton verlief die Übertragung reibungslos. Ein grosses Hurra auf die moderne Kommunikationstechnologie!
