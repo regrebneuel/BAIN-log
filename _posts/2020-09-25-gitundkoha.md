@@ -48,6 +48,7 @@ DBD::mysql::st execute failed: Cannot delete or update a parent row: a foreign k
 Da war dann aber auch die Stunde zu Ende und ich konnte das im Anschluss beheben. Was zuerst aussah, als hätte die Installation die Authentifizierungstabelle nicht sauber schreiben können, entpuppte sich wohl als Datenübertragungsproblem: ein Wiederaufrufen des Logins und anschliessendes Durchklicken ging fehlerfrei. Fazit: Man muss nicht alles verstehen!
 
 Die Grundkonfiguration jedenfalls war mit der Anleitung ein Klacks:
+
 ![]({{site.baseurl}}/assets/success.png)
 
 <hr>
