@@ -14,6 +14,7 @@ Womit wir nahtlos zum ersten Thema des heutigen Tages schreiten können: einer K
 Ich gebe zu, auch hier hörte nur mit einem halben Ohr zu, denn auch git gehört bei meiner Arbeit zum Alltag. Ohne eine solche Versionskontrolle wäre ein sinnvoller Umgang mit selbstentwickelter oder selbstgewarteter Software unmöglich.
 
 Insofern war ich dann etwas erstaunt, dass als Anweisung zur Einarbeitung der Links zu den Lerntagebüchern nach `git fork pfad_zum_zu_forkenden_repository` kein eigener branch ausgecheckt werden sollte, wie das sonst üblich ist.[^1]
+
 [^1]: Es widerspricht den Best Practices der Arbeit mit git, auf dem Master Branch zu arbeiten, damit Merge-Konflikte (das sind Konflikte beim Datenabgleich, die entstehen, wenn derselbe Code von verschiedenen Seiten unterschiedlich bearbeitet wurde) auf einem anderen Branch bereinigt werden können. Teils gilt gar, dass nie zwei auf demselben Branch arbeiten!
 
 In unserem Fall spielte das aber nicht so eine grosse Rolle, weil ja klar war, dass alle einfach eine Zeile einfügen an derselben Stelle, womit die Merge-Konflikte leicht aufzulösen sind, indem die Zeilen einfach untereinandergereiht werden im Master.[^2]
