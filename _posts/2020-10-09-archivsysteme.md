@@ -67,10 +67,10 @@ Eine tmux-Session.
 
 Das war also nix. Fehlersuche war angesagt, aber wie? Ein Server Error 500 ist so ungefähr die generischste Fehlermeldung, die einem ein Server vor den Latz knallen kann. Und im Hintergrund rödelte ArchiveSpace immer weiter. Alle Schnittstellten funktionierten, bloss auf Port 8081 kam keine Antwort.
 
-Ich stoppte die Applikation und schaute mir den Output mal durch nach einem Fehler, was aber bei dem Ausstoss an Text Fischen im Trben gleicht. Also bin ich die Log Files suchen gegangen, und habe sie auch gefunden unter ~./archivspace/logs/archivesspace.out Dort liegt natürlich dieselbe Buchstabenwüste wie in der Konsole, also mit `grep -C 100 'WARNING: ERROR:' archivesspace.out` die Ausgabe eingegrenzt und unseren Dozenten zur Rettung geschickt.
+Ich stoppte die Applikation und schaute mir den Output mal durch nach einem Fehler, was aber bei dem Ausstoss an Text Fischen im Trben gleicht. Also bin ich die Log Files suchen gegangen, und habe sie auch gefunden unter ~./archivspace/logs/archivesspace.out Dort liegt natürlich dieselbe Buchstabenwüste wie in der Konsole, also mit `grep -C 100 'WARNING: ERROR:' archivesspace.out` die Ausgabe eingegrenzt und unseren Dozenten zur Rettung an die Dozenten geschickt.
 
-Dies führte tatsächlich zum Ziel! Ich hatte ja den erstbesten Fehler im Verdacht; da meckerte Ruby, dass ein Gem fehle. Tatsächlich aber waren bei mir und Melanie als einzige eine zu neue Java-Version installiert, mit der das für das Public Interface von ArchiveSpace zuständige Modul (noch) nicht umgehen kann.
+Und die fanden tatsächlich rechtzeitig vor dem nächsten Unterricht die Lösung! Ich hatte ja den erstbesten Fehler im Verdacht; da meckerte Ruby, dass ein Gem fehle. Tatsächlich aber war bei mir und Melanie als einzigen eine zu neue Java-Version installiert, mit der nur das für das Public Interface von ArchiveSpace zuständige Modul (noch) nicht umgehen kann.
 ![]({{site.baseurl}}/assets/jdk.png)
 Der Screenshot der Rettung
 
-Kurz vor der schon bald folgenden nächsten Sitzung waren unsere Rechner also auch wieder voll einsatzfähig, YEAY!!
+Zur nächsten Sitzung waren unsere Rechner also auch wieder voll einsatzfähig, YEAY!!
