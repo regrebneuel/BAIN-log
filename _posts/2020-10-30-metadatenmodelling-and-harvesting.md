@@ -34,8 +34,20 @@ Wobei in der Option `--url` SOURCE für die URL der Datenquelle steht, also die 
 ### Crosswalks statt Catwalks &ndash; MarcEdit als störrischer Esel, der dann aber doch noch gehorcht
 Nun sind die Daten alle bei uns, aber jetzt müssen die noch zum Frisör, denn die sind ja in drei verschiedenen Metadaten-Formaten. Die Schere des Coiffeurs MarcEdit heisst XSLT (XSL Transformation, eine Sprache für die Transformation von XML-Dateien). Damit die Formate aufeinander passend gemacht werden können, muss man die jeweiligen Datenfelder aufeinander "mappen". Leider ist da meistens keine 1:1-Zuordnung möglich, weil den Daten teilweise sehr unterschiedliche Modellierungskonzepte zugrunde liegen. Im Idealfall wäre das aber verlustfrei möglich.
 
-Für mich fangen hier die Probleme an. MarcEdit auf Ubuntu ist sehr störrischer Esel, und das GUI ist alles andere als benutzerfreundlich. Zuerst müssen falsche Backslashes in den Pfaden der benötigten Funktionen geändert werden, weil sonst MarcEdit gar nicht funktioniert. So weit, so mühsam, aber gut.
+Für mich fangen hier die Probleme an. MarcEdit[^1] auf Ubuntu ist sehr störrischer Esel, und das GUI ist alles andere als benutzerfreundlich (sein Geburtsjahr ist dem GUI deutlich anzusehen). Zuerst müssen falsche Backslashes in den Pfaden der benötigten Funktionen geändert werden, weil sonst MarcEdit gar nicht funktioniert. So weit, so mühsam, aber gut.
+
+![]({{site.baseurl}}/assets/marc_gui.png)
+Das angestaubte MarcEdit-Gui.
+
+[^1]: [MarcEdit](https://marcedit.reeset.net/) ist eine Freeware, die von dem Bibliothekar [Terry Reese](https://blog.reeset.net/about-me) 1999 in C# entwickelt wurde, ursprünglich für ein konkretes Datenbereinigungsprojekt an der Oregon State University. Heute arbeitet er an der Ohio State University.
 
 Weiter also: wir versuchen, die Daten in Marc21xml zu überführen. Bei mir klappt das mit allen aussser den ArchivesSpace-Daten. MarcEdit meckert immer mit einem "File cannot be located. Error Number: -4". Und das, obwohl man doch über einen File Dialog den Pfad zur Datei übergibt? Ich steh vor einem Rätsel, dass ich in der Stunde auch nciht mehr gelöst bekomme.
 
 Erst daheim, wo ich mir nochmal in Ruhe die Funktions-Einstellungen anschaue, dämmert mir, wo der Fehler liegt. Es ist für EAD=>MARC ein .xsl hinterlegt, dass es dort gar nicht gibt!! Es liegen dort mehrere verschiedene. Das EADtoMarc21slimXML.xsl funktionierte nicht, respektive produzierte kein Marcxml. Mit EADlitetoMARC21slimXML.xsl funktioniert es! Endlich kann ich mich der Vorbereitung der nächsten Lerneinheit widmen: OpenRefine!
+
+Und zum Abschluss noch ein Tipp für Ubuntu-Nutzende, denen MarcEdit hängen bleibt oder nicht sauber aufstartet und sich nicht mehr schliessen lässt:
+
+![]({{site.baseurl}}/assets/marc_kill.png)
+How to kill MarcEdit.
+
+Im Terminal mit `ps aux | grep marc` die MarcEdit-relevanten Prozesse auslesen; dann die Prozess-ID (im Bild markiert) kopieren und mit `kill -9` den Prozess abschiessen. Dann sollte das Fenster verschwinden und man kann neu anfangen.
