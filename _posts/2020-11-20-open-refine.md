@@ -27,7 +27,13 @@ Mit dem Reconciliation-Tool ist es ausserdem möglich, die Daten zusätzlich anz
 Es scheint, also würde der Workshop von Library Carpentry ein Update vertragen."
 %}
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> This is my note. All the content I type here is treated as a single paragraph.</div>
+{{site.data.alerts.note}}
+<p>This is my note.</p>
+<pre>
+def foo(x):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return x+1
+</pre>
+{{site.data.alerts.end}}
 
 Dem tabellarischen Aufbau entsprechend eignet sich OpenRefine besonders gut für ebensolche Daten, also CSV, TSV, XLS, XLSX und auch TXT mit Trennzeichen oder festen Spaltenbreiten. Auch flache XML-Hierarchien lassen sich noch bearbeiten. Bei tief verschachtelten Hierarchien wie sie z.B. bei EAD oder LIDO zu finden sind, muss das Tool passen (womit es für mich bei der Arbeit wohl auch ausfällt). In Kombination mit MarcEdit kann es auch für Analyse und Umbau von MARC21 verwendet werden, das haben wir aber (noch?) nicht angeschaut.
 
