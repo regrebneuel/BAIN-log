@@ -22,11 +22,11 @@ Leider sind fehlerfreie Metadaten ziemlich seltene Tiere im Bibliothekszoo; oft 
 
 Mit dem Reconiliation-Tool ist es ausserdem möglich, die Daten zusätzlich anzureichern, bspw. mit Authority-Daten wie [VIAF](https://github.com/codeforkjeff/refine_viaf) oder [Wikidata](https://wdreconcile.toolforge.org/)
 
-:::WARNING
-8-ung, sowohl das refine_viaf als auch der wikidata-Link im LC-Workshop sind deprecated, stattdessen soll man [conciliator](https://github.com/codeforkjeff/conciliator) und für wikidata [diesen Link](https://wikidata.reconci.link/) benützen.
-
-Es scheint, also würde der Workshop von Library Carpentry ein Update vertragen.
-:::
+{% include warning.html content ="
+8-ung, sowohl das refine_viaf als auch der wikidata-Link im LC-Workshop sind deprecated, stattdessen soll man [conciliator](https://github.com/codeforkjeff/conciliator) und für wikidata [diesen Link](https://wikidata.reconci.link/) benützen.<br/>
+<br/>
+Es scheint, also würde der Workshop von Library Carpentry ein Update vertragen.""
+%}
 
 Dem tabellarischen Aufbau entsprechend eignet sich OpenRefine besonders gut für ebensolche Daten, also CSV, TSV, XLS, XLSX und auch TXT mit Trennzeichen oder festen Spaltenbreiten. Auch flache XML-Hierarchien lassen sich noch bearbeiten. Bei tief verschachtelten Hierarchien wie sie z.B. bei EAD oder LIDO zu finden sind, muss das Tool passen (womit es für mich bei der Arbeit wohl auch ausfällt). In Kombination mit MarcEdit kann es auch für Analyse und Umbau von MARC21 verwendet werden, das haben wir aber (noch?) nicht angeschaut.
 
