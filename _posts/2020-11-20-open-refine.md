@@ -22,7 +22,7 @@ Leider sind fehlerfreie Metadaten ziemlich seltene Tiere im Bibliothekszoo; oft 
 
 Mit dem Reconciliation-Tool ist es ausserdem möglich, die Daten zusätzlich anzureichern, bspw. mit Authority-Daten wie [VIAF](https://github.com/codeforkjeff/refine_viaf) oder [Wikidata](https://wdreconcile.toolforge.org/)
 
-{% include note.html assign alert="8-ung, sowohl das refine_viaf als auch der wikidata-Link im LC-Workshop sind deprecated, stattdessen soll man [conciliator](https://github.com/codeforkjeff/conciliator) und für wikidata [diesen Link](https://wikidata.reconci.link/) benützen. <br/>
+{% include note.html content="8-ung, sowohl das refine_viaf als auch der wikidata-Link im LC-Workshop sind deprecated, stattdessen soll man [conciliator](https://github.com/codeforkjeff/conciliator) und für wikidata [diesen Link](https://wikidata.reconci.link/) benützen. <br/>
 <br/>
 Es scheint, also würde der Workshop von Library Carpentry ein Update vertragen."
 %}
