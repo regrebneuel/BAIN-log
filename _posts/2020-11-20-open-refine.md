@@ -24,7 +24,7 @@ Mit dem Reconciliation-Tool ist es ausserdem möglich, die Daten zusätzlich anz
 
 {% include note.html content="8-ung, sowohl das refine_viaf als auch der wikidata-Link im LC-Workshop sind deprecated, stattdessen soll man [conciliator](https://github.com/codeforkjeff/conciliator) und für wikidata [diesen Link](https://wikidata.reconci.link/) benützen. <br/>
 <br/>
-Es scheint, also würde der Workshop von Library Carpentry ein Update vertragen."
+Es scheint, als würde der Workshop von Library Carpentry ein Update vertragen."
 %}
 
 

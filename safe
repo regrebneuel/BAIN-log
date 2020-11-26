@@ -1,0 +1,36 @@
+
+<record>
+<leader>     nab a22     uu 4500</leader>
+<controlfield tag="001">{{cells['URL'].value.replace('https://doaj.org/article/','').escape('xml')}}</controlfield>
+<datafield tag="022" ind1=" " ind2=" ">
+    <subfield code="a">{{cells['ISSNs'].value.escape('xml')}}</subfield>
+</datafield>
+<datafield tag="100" ind1="0" ind2=" ">
+    <subfield code="a">{{cells['Authors'].value.split('|')[0].escape('xml')}}</subfield>
+    {{
+    forNonBlank(
+    cells['GND-Nummer'].value,
+    v,
+    '<subfield code="0">' + v.escape('xml') + '</subfield>', ''
+    )
+    }} 
+    {{
+    	forNonBlank(
+        cells['Geburtsdatum'].value,
+        v,
+        '<subfield code="d">' + v.escape('xml') + '</subfield>', ''
+    )
+    }}
+</datafield>
+<datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">{{cells["Title"].value.escape('xml')}}</subfield>
+</datafield>{{
+forEach(cells['Authors'].value.split('|').slice(1), v ,'
+<datafield tag="700" ind1="0" ind2=" ">
+    <subfield code="a">' + v.escape('xml') + '</subfield>
+</datafield>')
+}}
+<datafield tag="041" ind1=" " ind2=" ">
+   <subfield code="a">{{cells['Language'].value.escape('xml')}}</subfield>
+</datafield>
+</record>
