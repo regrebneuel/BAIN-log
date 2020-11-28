@@ -53,21 +53,23 @@ Weiter zur zweiten Übung, wo es galt, das zuhause ohne Probleme installierte Ar
 
 Typischerweise macht man das heute entweder mit virtualisierten Servern oder in abgekapselten Containern, die auf einem Server laufen.
 
-Aber los jetzt, es gilt, in ArchiveSpace eigene Datensätze zu erstellen. Intuitiv sollen wir das machen, und nicht einfach der [Trainingsanleitung](https://guides.nyu.edu/ld.php?content_id=23198351) folgen, aber ich hätte mich damit bestimmt leichter getan. Die gefühlt tausend Felder, die es zu befüllen gibt, liegen mir quer im Kopf und ich kann wenig mit den Begriffen anfangen. Trotzdem hangle ich mich von Accession zu Record und will das auf http:localhost:8081 im public space anzeigen und ...
+Aber los jetzt, es gilt, in ArchiveSpace eigene Datensätze zu erstellen. Intuitiv sollen wir das machen, und nicht einfach der [Trainingsanleitung](https://guides.nyu.edu/ld.php?content_id=23198351) folgen, aber ich hätte mich damit bestimmt leichter getan. Die gefühlt tausend Felder, die es zu befüllen gibt, liegen mir quer im Kopf und ich kann wenig mit den Begriffen anfangen. Trotzdem hangle ich mich von Accession zu Record und will das auf http://localhost:8081 im public space anzeigen und ...
 
 ## beyond: 500
 ![](https://pad.gwdg.de/uploads/upload_58179a0d9e4fe84293c37a9f5fa1479f.png)
-Kein Anschluss unter dieser Nummer. 😧
+**Kein Anschluss unter dieser Nummer.** 😧
 
 Ich hatte zuerst befürchtet, es hätte was mit der tmux Session zu tun, in der ich ArchiveSpace mit `tmux new -s archivespace` gestartet hatte.[^2]
+
 ![]({{site.baseurl}}/assets/archivespace_tmux.png)
-Eine tmux-Session.
+
+Eine tmux-Session im Vordergrund des Terminals (mit `Ctrl + b` und `d` detached man sie in den Hintergrund, mit `tmux a` attached man sie wieder im Terminal; sehr praktisch, das!).
 
 [^2]: ArchiveSpace läuft immer in einer Shell, wenn man die Konsole schliesst, beendet das automatisch auch die Applikation. `tmux` löst `screen` ab, ein [Terminal Multiplexer](https://en.wikipedia.org/wiki/GNU_Screen), der wegen Sicherheitslücken z.b. von RHEL 8 gestrichen wurde, wie ich bei der Arbeit gelernt hatte. Das wollte ich doch gleich anwenden, und ArchiveSpace im Hintergrund laufen lassen, was auch tadellos funktioniert, wenn ...
 
 Das war also nix. Fehlersuche war angesagt, aber wie? Ein Server Error 500 ist so ungefähr die generischste Fehlermeldung, die einem ein Server vor den Latz knallen kann. Und im Hintergrund rödelte ArchiveSpace immer weiter. Alle Schnittstellten funktionierten, bloss auf Port 8081 kam keine Antwort.
 
-Ich stoppte die Applikation und schaute mir den Output mal durch nach einem Fehler, was aber bei dem Ausstoss an Text Fischen im Trben gleicht. Also bin ich die Log Files suchen gegangen, und habe sie auch gefunden unter ~./archivspace/logs/archivesspace.out Dort liegt natürlich dieselbe Buchstabenwüste wie in der Konsole, also mit `grep -C 100 'WARNING: ERROR:' archivesspace.out` die Ausgabe eingegrenzt und unseren Dozenten zur Rettung an die Dozenten geschickt.
+Ich stoppte die Applikation und schaute mir den Output mal durch nach einem Fehler, was aber bei dem Ausstoss an Text Fischen im Trüben gleicht. Also bin ich die Log Files suchen gegangen, und habe sie auch gefunden unter ~./archivspace/logs/archivesspace.out Dort liegt natürlich dieselbe Buchstabenwüste wie in der Konsole, also mit `grep -C 100 'WARNING: ERROR:' archivesspace.out` die Ausgabe eingegrenzt und unseren Dozenten zur Rettung an die Dozenten geschickt.
 
 Und die fanden tatsächlich rechtzeitig vor dem nächsten Unterricht die Lösung! Ich hatte ja den erstbesten Fehler im Verdacht; da meckerte Ruby, dass ein Gem fehle. Tatsächlich aber war bei mir und Melanie als einzigen eine zu neue Java-Version installiert, mit der nur das für das Public Interface von ArchiveSpace zuständige Modul (noch) nicht umgehen kann.
 ![]({{site.baseurl}}/assets/jdk.png)

@@ -5,7 +5,7 @@ date: 2020-10-02
 ---
 
 # Koha zum Zweiten
-Die [Installation]({{sit.baseurl}}/2020-09-25/gitlabundkoha) war ja quasi ein Kinderspiel. Also machte ich mich kurz vor dem zweiten Teil daran, noch die restlichen Kaptiel des Tutorials von [Zefanja](https://zefanjas.de/koha-installation-schule-bibliografische-framework/) durchzuarbeiten.
+Die [Installation]({{site.baseurl}}/2020-09-25/gitlabundkoha) war ja quasi ein Kinderspiel. Also machte ich mich kurz vor dem zweiten Teil daran, noch die restlichen Kaptiel des Tutorials von [Zefanja](https://zefanjas.de/koha-installation-schule-bibliografische-framework/) durchzuarbeiten.
 
 Da hatte ich zwar in der [BAIN-Anleitung](https://pad.gwdg.de/12VJD7x4QgiRr498oLhnwg?view#Aufgaben) gelesen, dass man im Kapitel zwei das bibliografische Framework nicht bearbeiten sollte. Da ging aber wohl der Enthusiasmus mit mir durch und ich machte den Export, zuerst als .csv, dann als .ods, weil die Datei ja ganz offensichtlich zwei Reiter hatte, die auf einem CSV irgendwie nicht so übersichtlich waren.
 
@@ -32,14 +32,14 @@ Es müssen doch *tatsächlich* die ID-Felder mit Doppelpunkt, und nicht mit Punk
 <p><a href="https://commons.wikimedia.org/wiki/File:University_of_Notre_Dame%27s_Hesburgh_Library.JPG#/media/File:University_of_Notre_Dame's_Hesburgh_Library.JPG"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/University_of_Notre_Dame%27s_Hesburgh_Library.JPG/1200px-University_of_Notre_Dame%27s_Hesburgh_Library.JPG" alt="University of Notre Dame's Hesburgh Library.JPG"></a></p>
 Der Touchdown Jesus am Eingang der Bibliothek hat seinen Namen [verdient](https://en.wikipedia.org/wiki/Hesburgh_Library#Nickname)
 
-Wie es scheint, ist die Koha-Community ist gut aufgestellt, mit ausführlichem [Wiki](https://wiki.koha-community.org/wiki/Main_Page), und wenn man dereinst tatsächlich mit Koaha arbeiten sollte, könnte man sich [hier](https://lists.koha-community.org/cgi-bin/mailman/listinfo/koha-de) in die deutsche Mailingliste eintragen.
+Wie es scheint, ist die Koha-Community gut aufgestellt, mit ausführlichem [Wiki](https://wiki.koha-community.org/wiki/Main_Page), und wenn man dereinst tatsächlich mit Koaha arbeiten sollte, könnte man sich [hier](https://lists.koha-community.org/cgi-bin/mailman/listinfo/koha-de) in die deutsche Mailingliste eintragen.
 
 ## OAI-PMH: Metadaten-Harvesting mit der grossen Kelle
 
 Nun kann man über die vorhin festgelegten Schnittstellen in Koha nur einzelne Ressourcen abfragen, für Abfragen eines Gesamtkatalogs hat sich OAI-PMH etabliert &ndash; die *Open Archives Initiative Protocol for Metadata Harvesting* (in Alma gibt es aber wohl über sru-Schnittstellen diese Möglichkeit). Da befinde ich mich natürlich quasi wieder auf heimischer Erde, da ich bei der Arbeit so einen OAI-Server und das dahinterliegende Programm betreue und mitentwickle. Die Queries habe ich drum zugegebenermassen gar nicht weiter angeschaut und bin in meinem Einbinde-Versuch von sru.swissbib versunken ...
 
 ## Exkurs/Rückblick auf den letzten Teil
-Wozu ich gar nicht mehr kam letzte Woche ist die Würdigung von [Open Hub](https://www.openhub.net/p/koha), einer Plattform zur Beurteilung der Gesundheit von Open-Source-Projekten, im Link am Beisiel von Koha. Das ist eine sehr wertvolle Sache, da es durchaus schwierig sein kann zu beurteilen, wie aktuell eine Software noch ist und ob da noch genug Maintainer involviert sind, damit die Software weiterentwickelt wird. Das kann sehr informativ sein, falls die Untersuchung von Open Hub nicht allzu lange her ist.
+Wozu ich gar nicht mehr kam letzte Woche ist die Würdigung von [Open Hub](https://www.openhub.net/p/koha), einer Plattform zur Beurteilung der Gesundheit von Open-Source-Projekten, im Link am Beispiel von Koha. Das ist eine sehr wertvolle Sache, da es durchaus schwierig sein kann zu beurteilen, wie aktuell eine Software noch ist und ob da noch genug Maintainer involviert sind, damit die Software weiterentwickelt wird. Das kann sehr informativ sein, falls die Untersuchung von Open Hub nicht allzu lange her ist.
 
 Die Zahlen für Koha sind ziemlich eindrücklich und zeigen deutlich, dass die Community sehr aktiv ist und das Projekt stetig weiterentwickelt:
 
