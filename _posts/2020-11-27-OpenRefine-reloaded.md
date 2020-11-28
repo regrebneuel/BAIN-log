@@ -51,9 +51,9 @@ Die Aufarbeitung und die Exkurse hatten einige Zeit gekostet; es war aber spanne
 
 Die Installation von VuFind wurde dann von den Dozenten im Playalong-Stil vorexerziert, wohl weil sie in ihrem Testlauf einigen Fallstricken begegnet waren, die sie uns ersparen wollten:
 
-Es wurde noch einmal erwähnt, weswegen üblicherweise pro Software ein Server verwendet wird: Dependency hell lässt grüssen. Zu gross ist die Gefahr, dass sich verschiedene Systeme nicht vertragen oder eben gar sich ausschliessende Abhängigkeiten haben. Durch Containerisierung (Stichworte: [Docker/Podman, Kubernetes, OpenShift](https://opensource.com/article/18/8/sysadmins-guide-containers)[^1]) können heute diese Probleme umgangen werden und viele Ressource gespart werden, aber das ist eine andere Geschichte.
+Es wurde noch einmal erwähnt, weswegen üblicherweise pro Software ein Server verwendet wird: Dependency hell lässt grüssen. Zu gross ist die Gefahr, dass sich verschiedene Systeme nicht vertragen oder eben gar sich ausschliessende Abhängigkeiten haben. Durch Containerisierung (Stichworte: [Docker/Podman, Kubernetes, OpenShift](https://opensource.com/article/18/8/sysadmins-guide-containers))[^1] können heute diese Probleme umgangen werden und viele Ressource gespart werden, aber das ist eine andere Geschichte.
 
-[^1]: Unterschied Podman und Docker: https://www.netways.de/blog/2019/05/31/podman-ist-dem-docker-sein-tod/; [Openshift](https://de.wikipedia.org/wiki/OpenShift)
+[^1]: [Unterschied Podman und Docker](https://www.netways.de/blog/2019/05/31/podman-ist-dem-docker-sein-tod/); [Openshift](https://de.wikipedia.org/wiki/OpenShift)
 
 Auf unserem Ubuntu 20.04 vertragen sich interessantweise alle von uns verwendeten Systeme, allerdings stellt sich bei VuFind ein Hindernis in den Weg, das bei [ArchivesSpace]({{site.baseurl}}/2020-10-09/archivsysteme) Melanie und mich ausgebremst hatte: Dieses Tool kann (noch) nicht mit der neusten Java-Installation, weswegen dann Solr nicht starten kann.
 
