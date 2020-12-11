@@ -77,7 +77,7 @@ Also zuerst noch mit `sudo apt-get update` die Paketquellen aktualisieren und (o
 
 Dann die Datenbank (auf Ubuntu 20.04 MariaDB, äquivalent zu MySql) mit `sudo /usr/bin/mysql_secure_installation` aufsetzen (enter, root pwd setzen, durch den Rest durchklicken mit enter) und einrichten:
 
-![]({{site.baseurl}}/assets/VuFind/mysqul-setup.png)
+![]({{site.baseurl}}/assets/VuFind/mysql-setup.png)
 
 und entgegen der Anleitung mit `chown` von einigen Dateien die Rechte anpassen, also den Owner changen:
 
@@ -85,7 +85,7 @@ und entgegen der Anleitung mit `chown` von einigen Dateien die Rechte anpassen, 
 
 Danach, wenn die richtige Java-Version aktiv ist, startet Solr ohne Mucken:
 
-![]({{site.baseurl}}/assets/VuFind/solr.png)
+![]({{site.baseurl}}/assets/VuFind/Solr.png)
 
 Auch VuFind läuft im Browser und muss noch gemäss [Anleitung](https://pad.gwdg.de/ywogyRNTQ_CTg9PvrQywsQ?both#Configuring-and-starting-VuFind--Auto-Configuration) fertig konfiguriert werden, und mit dem Laden von ersten Testimporten ist auch dieses Modul bereits zu Ende.
 
