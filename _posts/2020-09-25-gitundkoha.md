@@ -26,11 +26,15 @@ Schliesslich schafften es fast alle, ihren eingefügten Link mit einem Push wied
 
 # Metadaten
 Die ganze Welt wird heute quasi von Metadaten gesteuert, und so ist das auch in Bibliotheken nicht anders. Einer der am weitesten verbreiteten Standards für Bibliotheksmetadaten ist Marc21 mit der Dateiendung `.mrc`, ein binäres Datenformat, das ohne spezielle Software nicht zu bearbeiten ist (eben mit einer Bibliothekssoftware oder einem spezifischen Editor wie [MarcEdit](https://marcedit.reeset.net)) und in MARCXML eine inhaltlich identische Repräsentation der Daten hat, die auch Menschenlesbar ist (https://www.dnb.de/DE/Professionell/Standardisierung/Standards/standards_node.html). Durch regional/international stark abweichende Katalogisierungsregeln ist es aber mit dem Standard nicht sehr weit her und die MARC-Daten unterscheiden sich dann stark und sind nicht ohne weiteres zwischen Bibliotheken austauschbar. Dem soll das neue Format [BIBFRAME]() in Zukunft Abhilfe schaffen, sowie zusätzlich Semantik (Linked Data) in die Daten bringen.
-In einer Übung hatten wir dann noch die Gelegenheit, uns die Unterschiede von zwei Metadatenstandards vor Augen zu führen und zu analysieren. Ich tat dies direkt in im Terminal, in dem ich mir die Daten von sru.swissbib.ch mit `curl -o 'dateiname' "https://swissbib.ch/search/defaultdb?query=MYQUERYSETTINGS"`für Dublin Core und MARCXML in je eine Datei schrieb, sodass ich sie auch später nochmal in Ruhe anschauen kann.
+In einer Übung hatten wir dann noch die Gelegenheit, uns die Unterschiede von zwei Metadatenstandards vor Augen zu führen und zu analysieren. Ich tat dies direkt in im Terminal, in dem ich mir die Daten von sru.swissbib.ch mit
+```
+curl -o 'dateiname' "https://swissbib.ch/search/defaultdb?query=MYQUERYSETTINGS"
+```
+für Dublin Core und MARCXML in je eine Datei schrieb, sodass ich sie auch später nochmal in Ruhe anschauen kann.
 
 
 # Koha
-Schliesslich machten wir an den letzten Teil der Aufgabe für heute: Die Installation von Koha auf der virtuellen Linux-Maschine, die wir im [letzten Teil]({{site.baseurl}}/2020-09-10-TGL.md) in Betrieb genommen hatten.
+Schliesslich machten wir an den letzten Teil der Aufgabe für heute: Die Installation des Bibliothekssystems Koha auf der virtuellen Linux-Maschine, die wir im [letzten Teil]({{site.baseurl}}/2020-09-10-TGL.md) in Betrieb genommen hatten.
 
 Mit einer guten Installationsanleitung, wie wir sie auf der [BAIN-Lektionsseite](https://pad.gwdg.de/12VJD7x4QgiRr498oLhnwg?view#Funktion-und-Aufbau-von-Bibliothekssystemen-12) vor uns hatten, ist so eine Installationsroutine reine Copy/Paste-Arbeit.
 
@@ -41,7 +45,7 @@ $ sudo mysql_secure_installation
 ```
 Unsere Installation ist insofern "unsicher", als dass wir kein root-Passwort für die DB einrichten, was aber für unsere Zwecke nicht notwendig ist. (Dies würde im Installationsprozess noch weitere Prompts zur Folge haben, die mit "Y" quittiert werden können, und auch ein root-Passwort müsste festgelegt werden.)
 
-Die Installation ging ganz glatt, bis ich am Web-Installer-Login hängenblieb, wo ich es vergeblich mit dem User *bibliothek* versuchte, bis uns gesagt wurde, dass der User eben *koha_bibliothek* heisst. Danach klickte ich mich durch, bis micht diese Fehlermeldung stoppte:
+Die Installation ging ganz glatt, bis ich am Web-Installer-Login hängenblieb, wo ich es vergeblich mit dem User *bibliothek* versuchte, bis uns gesagt wurde, dass der User eben *koha_bibliothek* heisst. Danach klickte ich mich durch, bis mich diese Fehlermeldung stoppte:
 ```
 DBD::mysql::st execute failed: Cannot delete or update a parent row: a foreign key constraint fails at /usr/share/perl5/DBIx/RunSQL.pm line 279, <$args{…}> line 1. Something went wrong loading file /usr/share/koha/intranet/cgi-bin/installer/data/mysql/kohastructure.sql ([SQL ERROR]: – -- Table structure for table auth_types – DROP TABLE IF EXISTS auth_types ) at /usr/share/koha/lib/C4/Installer.pm line 557.
 ```

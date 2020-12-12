@@ -5,7 +5,7 @@ date: 2020-10-16
 ---
 # Weiter geht's mit ArchivesSpace
 
-Nun war unser Ansatz bei der Erfassung der ersten Einträge reichlich unorthodox, denn die Accession, mit der wir ja angefangen hatten, ist ja zu deutsch die Erwerbung. Die wird man wohl eher *nicht* von Anfang an auf public setzen, weil ja der ganze Bestand erst evaluiert werden muss (insbesondere auf Persönlichkeitsrechte und nötige Sperrfristen und Zugangsbeschränkungen). Aber die Accession dokumentiert halt den Erwerbungsprozess, darum fängt man damit an. Für unsere Zwecke war das Publi-Setzen aber ok, weil wir ja sowieso nur Bruchstücke erfassten.
+Nun war unser Ansatz bei der Erfassung der ersten Einträge reichlich unorthodox, denn die Accession, mit der wir ja angefangen hatten, ist ja zu deutsch die Erwerbung. Die wird man wohl eher *nicht* von Anfang an auf public setzen, weil ja der ganze Bestand erst evaluiert werden muss (insbesondere auf Persönlichkeitsrechte und nötige Sperrfristen und Zugangsbeschränkungen). Aber die Accession dokumentiert halt den Erwerbungsprozess, darum fängt man damit an. Für unsere Zwecke war das Public-Setzen aber ok, weil wir ja sowieso nur Bruchstücke erfassten.
 
 Nach den üblichen Bemerkungen zu den Lerntagebüchern und Nachbemerkungen zur letzten Stunde zeigt uns Sebastian Meyer noch seine Archived Letters, um den tektonischen Aufbau nochmal zu verdeutlichen.
 
@@ -42,7 +42,7 @@ Zum ArchivesSpace-Abschluss gibt es noch den Marktüberblick über die Archivsys
 
 ## DSpace zum Dessert
 
-Zum Abschluss des Tages schauen wir uns Repository-Software für Publikationen und Forschungsdaten an, konkret an einer [Onlinedemo für Version 6.x](https://demo.dspace.org/) von DSpace genauer an (weil es alle drei Bereiche abdecken kann). Mehr dazu aber ausführlich im nächsten Artikel.
+Zum Abschluss des Tages schauen wir uns Repository-Software für Publikationen und Forschungsdaten, konkret eine [Onlinedemo für Version 6.x](https://demo.dspace.org/) von DSpace genauer an (weil es alle drei Bereiche abdecken kann). Mehr dazu aber ausführlich im nächsten Artikel (was sich dann hinterher als Irrtum herausstellen sollte).
 
 Hier nur noch die grundsätzliche Unterscheidung von Open Access und Open Data:
 Bei Open Access geht es um kostenfreien Zugang zu Forschungspublikationen, bei Open Data um die Forschungsdaten, die diesen Publikationen zugrundeliegen. Davon nochmal zu unterscheiden ist die Forschungsinformation, in denen es um Daten über Forschende und ihre Forschung (Welcher Bereich, Art der Finanzierung etc.) geht.

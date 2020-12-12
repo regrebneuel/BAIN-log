@@ -7,17 +7,17 @@ date: 2020-10-09
 
 Zum Einstieg in den Tag musste ich tief in meinen Erst- und Zweitsemester-Erinnerungen graben. Archive sind so meine Stärke nicht, doch was wir zum Ankurbeln der Erinnerungen erzählt bekamen, war mir dann doch nicht ganz unvertraut:
 
-Beispielsweise, das zentrale Unterschied zu Bibliotheken die folgenden sind:
-* Ziel ist die Bewahrung und die Erwerbung folgt meist einer Routine
+Beispielsweise, das zentrale Unterschiede zu Bibliotheken die folgenden sind:
+* Ziel ist die Bewahrung, und die Erwerbung folgt meist einer Routine
 * Erschlossen wird mit Findmitteln, nicht mit einem Katalog.
 * Provenienz vor Ressourcen; es ist wichtig, wer der Aktenbildner ist und wie der Entstehungszusammengang der Dokumente ist
 * Die Objekte sind in der Regel Unikate
 * Kontext, insbesondere auch Entstehungskontext ist wichtig;
-* Archive sind Zugangsbeschränkt, vor allem wegen Persönlichkeitsrechte oder Staatsgeheimnissen
+* Archive sind zugangsbeschränkt, vor allem wegen Persönlichkeitsrechte oder Staatsgeheimnissen
 
 ## ISAD(G)eht aus dem Leim...
 
-Auch beim Standard ISAD(G) klingeln meine Ohren, aber in allzu guter Erinnerung hab ich das Fach trotzdem nicht. Die Abkürzung steht für International Standard Archival Description (General) und ist ein Anwendungsstandard zur Verzeichnung Archivischer Unterlagen. [^1] Der STandard bildet mit mehrstufiger Verzeichnung im Provenienzprinzip den Entstehungszusammenhang ab.
+Auch beim Standard ISAD(G) klingeln meine Ohren, aber in allzu guter Erinnerung hab ich das Fach trotzdem nicht. Die Abkürzung steht für International Standard Archival Description (General) und ist ein Anwendungsstandard zur Verzeichnung Archivischer Unterlagen.[^1] Der Standard bildet mit mehrstufiger Verzeichnung im Provenienzprinzip den Entstehungszusammenhang ab.
 
 [^1]: Quelle: https://de.wikipedia.org/wiki/ISAD(G); die umfangreiche Schweizerische Richtlinie für die Umsetzung von ISAD(G) gibt es [hier](https://vsa-aas.ch/wp-content/uploads/2015/06/Richtlinien_ISAD_G_VSA_d.pdf).
 
@@ -26,7 +26,7 @@ Der Standard ist etwas in die Jahre gekommen und hat Defizite:
 - eindimensionale Tektonik: man kann ein Ojekt nur an EINEM Ort anhängen, und das ist abhängig von der Erschliessung des Archivars, also ein Stück weit arbiträr.
 - es gibt keine Vorgaben für die digitale Langzeitarchivierung (zu alter Standard)
 
-Die erste Übung dann offenbarte mir, was mich immer so abschreckte: die unübersichtliche Verschachtelung der Dossiers in den Dateibäumen will mir einfach nicht schmecken.
+Die erste Übung offenbarte mir dann, was mich immer so abschreckte: die unübersichtliche Verschachtelung der Dossiers in den Dateibäumen will mir einfach nicht schmecken.
 
 ## EAD und RiC to the rescue!
 
@@ -49,7 +49,7 @@ Um Archive für die digitale Zukunft zu rüsten, wurde auch ein XML-Standard ent
 
 ## To infinity and ...
 
-Weiter zur zweiten Übung, wo es galt, das zuhause ohne Probleme installierte ArchivesSpace zu konfigurieren. Interessanterweise kommen sich Koha und ArchivesSpace nicht in die Quere. Es ist eigentlich gar nicht State-of-the-Art, zwei Systeme auf demselben Server laufen zu lassen, weil es immer wieder zu Konflikten von Abhängigkeiten kommen kann.
+Weiter zur zweiten Übung, wo es galt, das zuhause ohne Probleme installierte ArchivesSpace zu konfigurieren. Interessanterweise kommen sich Koha und ArchivesSpace nicht in die Quere. Es ist eigentlich gar nicht State-of-the-Art, zwei Systeme auf demselben Server laufen zu lassen, weil es immer wieder zu Konflikten von Abhängigkeiten kommen kann (darüber etwas ausführlicher im Bericht zu [LE 8]({{site.baseurl}}/2020-11-27/OpenRefine-reloaded#endlich-vufind) ).
 
 Typischerweise macht man das heute entweder mit virtualisierten Servern oder in abgekapselten Containern, die auf einem Server laufen.
 

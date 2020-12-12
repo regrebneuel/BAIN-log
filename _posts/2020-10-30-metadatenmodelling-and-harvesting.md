@@ -21,14 +21,16 @@ Die Schnittstellen, die wir bisher kennen lernten und die sich etabliert haben s
 
 Mit dem Wechsel von Aleph zu Alma sind wohl die letzten Tage der Uralt-Schnittstelle Z39.50 eingeläutet, auch wenn die Schnittstelle noch immer da ist. In der KnowledgeBase von ExLibris wird jedenfalls festgehalten, dass es pro Institution Zone bloss ein Profil dafür gibt und externe Suchen mit mehr als 10'000 Resultaten mit Fehler abbrechen ([ExLibris KnowledgeBase](https://knowledge.exlibrisgroup.com/Alma/Product_Documentation/010Alma_Online_Help_(English)/090Integrations_with_External_Systems/030Resource_Management/180Z39.50_Search)). Wir haben die im Kurs nur aus historischen Gründen kennen gelernt und verwenden sie nicht weiter.
 
-Wir verwenden fürs Harvesting entweder SRU oder OAI-PMH, die über einfach Web-Requests für Bulk-Abfragen eingerichtet sind.
+Wir verwenden fürs Harvesting entweder SRU oder OAI-PMH, die über einfache Web-Requests für Bulk-Abfragen eingerichtet sind.
 
 Dann gäbe es etwas neuer noch [Datacite](https://datacite.org/), ein Metadatenstandard eines internationalen Konsortiums, das vorwiegend für Forschungsdaten (DINI Zertifikat für Open Access Publikationen) verwendet wird; der ist sich erst am etablieren, den lassen wir mal aussen vor (mehr Infos dazu gibt's auf dieser [Wikipedia-Seite](https://de.wikipedia.org/wiki/DataCite)).
 
 
 ### Installation und Anwendung VuFindHarvest
-Als erste Übung installieren wir VuFindHarvest und harvesten von den von uns aufgesetzten und angereicherten Quellen von Koha, ArchivesSpace und DSpace (da verwenden wir eine Demo-Source, weil unsere Einträge seit dem letzten Modul gelöscht wurden).  Das geht alles unproblematisch; der Harvester wird vufindharvest-Verzeichnis mit diesem Befehl angeworfen:
-`php bin/harvest_oai.php --url=http://SOURCE --metadataPrefix=METADATASOURCE --set=SETNAME`
+Als erste Übung installieren wir VuFindHarvest (anstelle des ursprünglich vorgesehenen Tools [metha](https://github.com/miku/metha), das offenbar etwas zickig sein kann) und harvesten von den von uns aufgesetzten und angereicherten Quellen von Koha, ArchivesSpace und DSpace (da verwenden wir eine Demo-Source, weil unsere Einträge seit dem letzten Modul gelöscht wurden).  Das geht alles unproblematisch; der Harvester wird im vufindharvest-Verzeichnis mit diesem Befehl angeworfen:
+```
+php bin/harvest_oai.php --url=http://SOURCE --metadataPrefix=METADATASOURCE --set=SETNAME
+```
 Wobei in der Option `--url` SOURCE für die URL der Datenquelle steht, also die Webschnittstelle, wo die Daten geholt werden sollen, und in der Option `--metadataPrefix` das Format der abzuholenden Daten definiert wird. Die Option `--set` benötigten wir nur für DSpace, weil diese Metadaten noch mit Sets versehen sind. Man könnte auch, wenn man regelmässig "erntet", mit `--from=FROM`/`--until=UNTIL` einen Zeitraum festlegen, um nur die zuletzt dazugekommenen Records zu holen. Eine vollständige Übersicht über die Harvesting-Option bekommt man mit `php bin/harvest_oai.php -h`.
 
 ### Crosswalks statt Catwalks &ndash; MarcEdit als störrischer Esel, der dann aber doch noch gehorcht
