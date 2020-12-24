@@ -60,3 +60,5 @@ Entstanden ist mit eigentlich klassischen textbasierten Filtern ein Quasi-Linked
 ![]({{site.baseurl}}/assets/lod/marbach_tektonik.png)
 
 Dauer des Projekts inklusive einjährigem Vorprojekt: vier Jahre. Das ganze wird wohl ab erstem Quartal nächstes Jahr online sein. Gratulation! Das sieht sehr vielversprechend aus!
+
+<hr>

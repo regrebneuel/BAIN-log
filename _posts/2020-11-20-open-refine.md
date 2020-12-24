@@ -58,6 +58,6 @@ Es war sehr interessant zu sehen, welche umfangreichen Möglichkeiten die Softwa
 
 Spannend finde ich dabei auch den Gegensatz zur Arbeitsweise bei uns an der ETH-Bibliothek. Soviel ich weiss, benutzen "nur" die Bibliothekar'innen der Katalogisierung ab und an OpenRefine (und MarcEdit). Die Systembibliothekar'innen der Bibliotheks-IT-Services arbeiten &ndash; soweit ich das überblicke &ndash; mit selbst entwickelten Shell-Skripts und Python-Skript (meist mit dem Pandas-Paket); die Normalisierung für [Primo](https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE_%28English%29/050Display_Configuration/Configuring_Normalization_Rules_for_Display_and_Local_Fields) wurde bei Aleph mit Pipes und Drools Tools erreicht (gilt auch für Primo VE in Alma).
 
-
-
 [^1]: Ich stelle mir vor, dass dies ein Knackpunkt sein könnte, falls man diverse Software am Laufen hat, die dann gleichzeitig auf demselben Port lauschen will. Das lässt sich aber bestimmt in einer Config-Datei anpassen, wenn nötig. Entweder für OpenRefine, oder dann für die andere Anwwendung.
+
+<hr>

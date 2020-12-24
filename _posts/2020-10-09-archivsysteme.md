@@ -76,3 +76,4 @@ Und die fanden tatsächlich rechtzeitig vor dem nächsten Unterricht die Lösung
 Der Screenshot der Rettung
 
 Zur nächsten Sitzung waren unsere Rechner also auch wieder voll einsatzfähig, YEAY!!
+<hr>

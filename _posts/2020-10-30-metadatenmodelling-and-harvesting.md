@@ -53,3 +53,6 @@ Und zum Abschluss noch ein Tipp für Ubuntu-Nutzende, denen MarcEdit hängen ble
 How to kill MarcEdit.
 
 Im Terminal mit `ps aux | grep marc` die MarcEdit-relevanten Prozesse auslesen; dann die Prozess-ID (im Bild markiert) kopieren und mit `kill -9` den Prozess abschiessen. Dann sollte das Fenster verschwinden und man kann neu anfangen.
+
+
+<hr>

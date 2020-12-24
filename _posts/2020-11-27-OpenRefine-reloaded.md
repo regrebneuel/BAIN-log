@@ -94,3 +94,4 @@ Auch VuFind läuft im Browser und muss noch gemäss [Anleitung](https://pad.gwdg
 /usr/local/vufind/import-marc.sh /usr/local/vufind/tests/data/geo.mrc
 /usr/local/vufind/import-marc.sh /usr/local/vufind/tests/data/authoritybibs.mrc
 ```
+<hr>
