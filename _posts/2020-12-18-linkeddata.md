@@ -48,7 +48,7 @@ Zusammengeführt wurden die drei Datenbestände in OpenRefine, in einem einfache
 ![]({{site.baseurl}}/assets/lod/marbach.png)
 
 Suche auch nach Normdaten, die relevante Bestände zusammenfassen.
-![]({{site.baseurl}}/assets/lod/marbach_besonderes.png)
+![]({{site.baseurl}}/assets/lod/marbach_besonders.png)
 
 In den Treffern viele Facetten, ähnlich wie in VuFind, mit den Normdaten-Treffern on Top als Besonderheit
 ![]({{site.baseurl}}/assets/lod/marbach_facetten.png)
