@@ -11,11 +11,11 @@ Davor gaben uns auf Anregung von Karin Sandra und Alex noch einen spannenden Ein
 
 ## Aktuelle Datenmodelle: BIBFRAME und RiC
 Als letztes theoretisches Thema sprechen wir noch über aktuelle Datenmodelle für Metadaten.
-BIBRAME für Bibliotheken und RiC für Archive scheinen sich langsam durchzusetzen. Zu RiC habe ich an anderer Stelle schon kurz [geschrieben]({{site.baseurl}}/2020-10-097archivsysteme), weswegen ich nur auf BIBFRAME eingehe.[^1]
+BIBRAME für Bibliotheken und RiC für Archive scheinen sich langsam durchzusetzen. Zu RiC habe ich an anderer Stelle schon kurz [geschrieben]({{site.baseurl}}/2020-10-09/archivsysteme), weswegen ich nur auf BIBFRAME eingehe.[^1]
 Als zusammenfassende Einschätzung lässt sich festhalten: in Archiven wird sich die Arbeitsweise durch neue Möglichkeiten der mehrfachen Beziehungen grundsätzlich ändern, und es wird eine stärkere Harmonisierung der verschiedenen Sparten Archive/Bibliotheken geben. Der Einsatz der GND in Archiven hilft da sicher weiter.
 
 [^1]: zu RiC und RiC-O gibt es für interessierte eine aktuelle Präsentation von [Florence Clavaud](https://f.hypotheses.org/wp-content/blogs.dir/2167/files/2020/02/20200128_2_RecordsInContexts_englishVersionAdded1003.pdf).
-Schweizer Versuche zu Archival Linked Opend Data findet man unter http://www.alod.ch (mit Beteiligung: Niklaus Stettler).
+Schweizer Versuche zu Archival Linked Opend Data findet man unter [http://www.alod.ch](http://www.alod.ch) (mit Beteiligung: Niklaus Stettler).
 
 Der Standard wird seit 2012 als Nachfolger von MARC21 entwickelt (aktuell BIBFRAME 2.0, seit 2016) und beruht auf den *Functional Requirements for Bibliographic Records* (FRBR)[^2] und den Katalogisierungsregeln von RDA (nicht vollständig umgesetzt, sondern vereinfacht diese) und folgt Linked-Data-Paradigmen, was bibliographische Daten endlich Semantic-Web-fähig machen würde. Also: eindeutige URIs, eindeutiges Vokabular und Entitäten nur einmal beschrieben und mit Ressourcen verknüpft durch Relationen.
 
@@ -40,7 +40,7 @@ Zum Schluss zeigen uns die Dozenten noch ein Integrationsprojekt, an dem sie der
 
 Das Marbacher Literatur-Archiv sind eigentlich drei Institute in einem: eine Bibliothek, ein Archiv und ein Museum an einem Ort in unterschiedlichen Gebäuden. ADIS war end of life und old school (ein zwanzig jähriges Bibliothekssystem, basierend auf SQL und relationalen DB).
 Jede Abteilung hatte eigene Erschliessungstradtionen, trotz gleicher Software (verschieden erfasst und mit unterschiedlichen Metadaten und Sucheinstiegen für Benutzer'innen)
-Der alte Katalog war der in aDIS/BMS integrierte OPAC, ja. Hier kann der alte Katalog noch ausprobiert werden: https://www.dla-marbach.de/katalog/
+Der alte Katalog war der in aDIS/BMS integrierte OPAC, ja. Hier kann der alte Katalog noch ausprobiert werden: [https://www.dla-marbach.de/katalog/](https://www.dla-marbach.de/katalog/)
 
 Das neue System, das uns von den Dozenten auf der Testoberfläche vorgeführt wird, kann über alles suchen, man kann aber auch wie vorher einschränken.
 Zusammengeführt wurden die drei Datenbestände in OpenRefine, in einem einfachen CSV-Format.
