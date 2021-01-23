@@ -43,7 +43,7 @@ Das angestaubte MarcEdit-Gui.
 
 [^1]: [MarcEdit](https://marcedit.reeset.net/) ist eine Freeware, die von dem Bibliothekar [Terry Reese](https://blog.reeset.net/about-me) 1999 in C# entwickelt wurde, ursprünglich für ein konkretes Datenbereinigungsprojekt an der Oregon State University. Heute arbeitet er an der Ohio State University.
 
-Weiter also: wir versuchen, die Daten in Marc21xml zu überführen. Bei mir klappt das mit allen aussser den ArchivesSpace-Daten. MarcEdit meckert immer mit einem "File cannot be located. Error Number: -4". Und das, obwohl man doch über einen File Dialog den Pfad zur Datei übergibt? Ich steh vor einem Rätsel, dass ich in der Stunde auch nciht mehr gelöst bekomme.
+Weiter also: wir versuchen, die Daten in Marc21xml zu überführen. Bei mir klappt das mit allen aussser den ArchivesSpace-Daten. MarcEdit meckert immer mit einem "File cannot be located. Error Number: -4". Und das, obwohl man doch über einen File Dialog den Pfad zur Datei übergibt? Ich steh vor einem Rätsel, das ich in der Stunde auch nicht mehr gelöst bekomme.
 
 Erst daheim, wo ich mir nochmal in Ruhe die Funktions-Einstellungen anschaue, dämmert mir, wo der Fehler liegt. Es ist für EAD=>MARC ein .xsl hinterlegt, dass es dort gar nicht gibt!! Es liegen dort mehrere verschiedene. Das EADtoMarc21slimXML.xsl funktionierte nicht, respektive produzierte kein Marcxml. Mit EADlitetoMARC21slimXML.xsl funktioniert es! Endlich kann ich mich der Vorbereitung der nächsten Lerneinheit widmen: OpenRefine!
 
